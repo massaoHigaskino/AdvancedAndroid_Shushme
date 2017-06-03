@@ -61,6 +61,12 @@
 
         <!-- TODO (6) Add a LinearLayout that contains a checkbox to grant the location permissions
                         and set the checkbox click listener to call onLocationPermissionClicked -->
+        <CheckBox
+            android:id="@+id/permission_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grant Location Permission"
+            android:onClick="onLocationPermissionClicked"/>
 
         <Button
             android:layout_width="match_parent"
@@ -69,7 +75,8 @@
             android:background="@color/colorPrimary"
             android:text="@string/add_new_location"
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:onClick="onAddPlaceClicked"/>
 
         <TextView
             android:layout_width="wrap_content"
